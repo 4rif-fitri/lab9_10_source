@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    background: khaki;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*height: 100vh; /* or any height you want */
+}
+
+.login-container {
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/*table {
+    width: 100%;
+}*/
+
+th {
+    text-align: left;
+    padding: 10px 0;
+}
+
+input:not([type="radio"]):not([type="checkbox"]) {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    /* ensures padding doesn't mess up width */
+}
+
+
+input[type="submit"],
+input[type="reset"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #45a049;
+}
+
+.center {
+    text-align: center;
+}
+
+header {
+    background: darkseagreen;
+    font-family: arial;
+    padding: 10px;
+}
+
+.right {
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+}
+
+footer {
+    background: darkseagreen;
+    height: 50px;
+    padding: 20px;
+}
+
+.color {
+    color: green;
+}
+
+table {
+    border: green;
+    border-collapse: collapse;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+section {
+    margin: 20px;
+    height: max-content;
+}
+
+.imgcenter {
+    display: block;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile-box {
+    position: absolute;
+    top: 170px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #f5f5dc;
+    padding: 5px 10px;
+    border-radius: 25px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.username {
+    font-weight: bold;
+    color: #333;
+}
+
+.imgProfile {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #4CAF50;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    padding: 0.5rem;
+}
+
+.banner{
+    width: 80%;
+}
