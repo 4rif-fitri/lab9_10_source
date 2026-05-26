@@ -57,7 +57,8 @@
 							<tr>
 								<br />
 								<!-- create a submit button -->
-								<td colspan="2"><input type="submit" value="Submit Form" />
+								<td colspan="2">
+									<input type="submit" value="Submit Form" />
 									<input type="reset" value="Clear Form" />
 								</td>
 							</tr>
