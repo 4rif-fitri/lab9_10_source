@@ -43,17 +43,17 @@
 						<tr>
 							<th>Nasi Ayam: </th>
 							<td><input type="number" name="p_nAyam" value="6.50" readonly></td>
-							<td><input type="number" name="q_nAyam"></td>
+							<td><input type="number" name="q_nAyam" min="0" value="0"></td>
 						</tr>
 						<tr>
 							<th>Nasi Ambeng: </th>
 							<td><input type="number" name="p_nAmbeng" value="7.80" readonly></td>
-							<td><input type="number" name="q_nAmbeng"></td>
+							<td><input type="number" name="q_nAmbeng" min="0" value="0"></td>
 						</tr>
 						<tr>
 							<th>Nasi Tomato: </th>
 							<td><input type="number" name="p_nTomato" value="7.80" readonly></td>
-							<td><input type="number" name="q_nTomato"></td>
+							<td><input type="number" name="q_nTomato" min="0" value="0"></td>
 						</tr>
 						<tr>
 							<td colspan="3"><input type="submit" name="submit" value="SUBMIT ORDER">
@@ -68,7 +68,20 @@
 
 	<?php include("../components/footer.php") ?>
 
-	</center>
+	<script>
+		document.querySelector("form").addEventListener("submit", e => {
+			
+			let qAyam = document.querySelector('[name="q_nAyam"]').value.trim()
+			let qAmbeng = document.querySelector('[name="q_nAmbeng"]').value.trim()
+			let qTomato = document.querySelector('[name="q_nTomato"]').value.trim()
+			
+			if (qAyam == 0 && qAmbeng == 0 && qTomato == 0) {
+				e.preventDefault()
+				alert("Order Ape ni! Semua 0")
+			}
+		})
+	</script>
+
 </body>
 
 </html>

@@ -2,7 +2,6 @@
 
 <head>
 	<title>Sample form to take user input</title>
-	<link rel="stylesheet" type="text/css" type="format.css">
 </head>
 
 <body>
