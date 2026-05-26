@@ -6,4 +6,5 @@ azlin	mohammed	kkk	alysna@yahoo.com	0564	Female	Google,Facebook,	kkkk
 Zulhisham 	mohammed	kk	alysna@yahoo.com	0564	Male	Facebook,Utem,	k	
 Zulhisham 	Mohammed	ff	alysna@yahoo.com	0155	Female	Google,Facebook,	ff		
 Kiki Lala	Ahmad	Seremban, negeri sembilan	kiki@utem.edu.my	015451	Female	Google,Facebook,	good	
-Norazlin	Mohammed	seremban	norazlin@utem.edu.my	0196622105	Female	Google,Facebook,	good	
+Norazlin	Mohammed	seremban	norazlin@utem.edu.my	0196622105	Female	Google,Facebook,	good									
+sembatts	official	qwe	ariffitrimohdjamil@gmail.com	12345678	Female	123	123	

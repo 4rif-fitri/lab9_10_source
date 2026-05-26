@@ -1,3 +1,31 @@
+<?php
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+	$file = "../temp/detail.txt";
+
+	$data = array(
+		$_POST['FirstName'],
+		$_POST['LastName'],
+		$_POST['Tempat'],
+		$_POST['Email'],
+		$_POST['PhoneNumber'],
+		$_POST['Gender'],
+		$_POST['FavWebsite'],
+		$_POST['Comment']
+	);
+
+	$fp = fopen($file, "a");
+
+	foreach ($data as $v) {
+		fwrite($fp, $v . "\t");
+	}
+
+	fwrite($fp, "\n");
+	fclose($fp);
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,21 +39,15 @@
 	<?php include("../components/head.php") ?>
 
 	<h2>BUKU TAMU</h2>
-	<!-- <td>Fisrt Name</td>
-	<td>Last Name</td>
-	<td>Tempat</td>
-	<td>Email</td>
-	<td>Phone Number</td>
-	<td>Gender</td>
-	<td>Fav Website</td>
-	<td>Comment</td> -->
 
-	<form method="POST" action="Write.php" style="margin-bottom: 1rem;">
+
+	<form method="POST" action="" style="margin-bottom: 1rem;">
+		<!-- <form method="POST" action="Write.php" style="margin-bottom: 1rem;"> -->
 		<table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse" width="40%">
 
 			<tr>
 				<td width="20%" align="left">Fisrt Name</td>
-				<td width="30%"> <input type="text" name="FisrtName" size="30"></td>
+				<td width="30%"> <input type="text" name="FirstName" size="30"></td>
 			</tr>
 			<tr>
 				<td width="20%" align="left">Last Name</td>
